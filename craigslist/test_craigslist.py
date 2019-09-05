@@ -14,7 +14,7 @@ class TestCraigslist(unittest.TestCase):
         self.driver.close()
 
     def test_search(self):
-        SEARCH_CRITERIA = "ford"
+        SEARCH_CRITERIA="ford"
         self.driver.get("https://atlanta.craigslist.org")
         self.assertEqual("craigslist: atlanta, GA jobs, apartments, for sale, services, community, and events",
                          self.driver.title)
